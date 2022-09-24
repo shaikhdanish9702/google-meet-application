@@ -1,0 +1,24 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCog } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css"
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo">
+                <img className="img" src="data:image/png;base64,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" />
+                <span className="help-text">
+                    Meet
+                </span>
+            </div>
+            <div className="action-btn">
+                <FontAwesomeIcon className="icon-block" icon={faQuestionCircle}/>
+                <FontAwesomeIcon className="icon-block" icon={faExclamationCircle}/>
+                <FontAwesomeIcon className="icon-block" icon={faCog}/>
+            </div>
+        </div>
+    )
+}
+
+export default Header;
